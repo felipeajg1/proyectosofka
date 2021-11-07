@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "fdabab15-dd1b-497c-9f82-6375c1e56881",
+		"name": "sofka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/controladorUsuario/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\" : \"felipeajg\",\r\n    \"contraseña\" : \"felipe1992\",\r\n    \"rolUsuario\": \"NOADMINISTRADOR\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/controladorUsuario/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controladorUsuario",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/controladorUsuario/list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiZmVsaXBlYWpnIiwiYXV0aG9yaXRpZXMiOlsiTk9BRE1JTklTVFJBRE9SIl0sImlhdCI6MTYzNjMwNjgxMiwiZXhwIjoxNjM2MzA3NDEyfQ.M8-4pcpOU-WpkSIJnD-cDeRZi8nnNQBlOkVcTWz7IEh0o5uFX644fLpJHwdDLnUl6DZyMBkigsFP-FO7F6fJjA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/controladorUsuario/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controladorUsuario",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/controladorUsuario/greet",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiZmVsaXBlYWpnIiwiYXV0aG9yaXRpZXMiOlsiTk9BRE1JTklTVFJBRE9SIl0sImlhdCI6MTYzNjMwNjgxMiwiZXhwIjoxNjM2MzA3NDEyfQ.M8-4pcpOU-WpkSIJnD-cDeRZi8nnNQBlOkVcTWz7IEh0o5uFX644fLpJHwdDLnUl6DZyMBkigsFP-FO7F6fJjA",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/controladorUsuario/greet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"controladorUsuario",
+						"greet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
